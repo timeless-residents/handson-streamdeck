@@ -1,0 +1,40 @@
+[MASTER]
+# 特定のメッセージを無効化
+disable=
+    C0111, # missing-docstring
+    C0103, # invalid-name
+    C0303, # trailing-whitespace
+    C0301, # line-too-long
+    C0401,
+    C0410,
+    C0411,
+    C0412,
+    C0413,
+    W0012,
+    W0311, # bad-indentation
+    W0601,
+    W0602,
+    W0603, # global-statement
+    W0610,
+    W0611,
+    W0613,
+    W0621,
+    W0632,
+    W0702,
+    W0718,
+    W1510,
+    R0903, # too-few-public-methods
+    R0913, # too-many-arguments
+    R0914,  # too-many-locals
+    E1101,
+
+# 解析から除外するディレクトリ/ファイル
+ignore=CVS,tests,setup.py
+
+[FORMAT]
+# 最大行長
+max-line-length=120
+
+[BASIC]
+# 変数名の最小文字数
+variable-rgx=[a-z_][a-z0-9_]{1,30}$
